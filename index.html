@@ -3,14 +3,63 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Tres Tarjetas</title>
   </head>
 
   <body>
     <div class="cards">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
+      <div class="card">
+        <img
+          src="https://m.media-amazon.com/images/I/71XKjqn0kaL._CR0,204,1224,1224_UX256.jpg"
+          alt="colored tiles stacked"
+        />
+        <h2>Applying color to UI</h2>
+        <p>In a UI, color has a variety of roles...</p>
+        <a href=""
+          >Related link
+          <img
+            src="https://www.shutterstock.com/image-vector/white-rounded-right-arrow-grey-260nw-1090084799.jpg"
+            alt="arrow"
+            class="arrow"
+        /></a>
+      </div>
+      <div class="card">
+        <img
+          src="https://icons-for-free.com/download-icon-person+profile+user+icon-1320184018411209468_256.ico"
+          alt="polaroid icon"
+        />
+        <h2>Imagery in UI</h2>
+        <p>Imagery communicates an...</p>
+        <a href=""
+          >Related link
+          <img
+            src="https://www.shutterstock.com/image-vector/white-rounded-right-arrow-grey-260nw-1090084799.jpg"
+            alt="arrow"
+            class="arrow"
+        /></a>
+      </div>
+      <div class="card">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBESERUPDxIRDw8PDxIPDw8PEhEPDw8PGBQZGRgUGRkcIS4mHB4rIRgYKDgnLS8xNTU1GiQ7QEg0Py40NTEBDAwMEA8QGhISHjQhISExNDQxNDE0NDQ0MTQ0MTE0MT80NDE0PzQ1MTQxNDE0MTQxMTE/MTExNDExMTc0NDExNP/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABAMFAQIGBwj/xAA/EAACAgACBgcECAUEAwEAAAAAAQIDBBEFBhIhMUETUWFxgZGhBzJSsSIjQkNywcLRFDOCkqJiY3PhU7PSJP/EABoBAAMBAQEBAAAAAAAAAAAAAAADBAIFAQb/xAAxEQACAgADBAkDBAMAAAAAAAAAAQIDBBEhEjFB0RMyUWFxgZGx8AUioUJSweEjM0P/2gAMAwEAAhEDEQA/APZgAAAAAAAAAAAAAAAxmGZkAAxmGYli9J0VbrbYxfw57U/7Vm/Qqb9bqFurhZZ1PdCPq8/QVO6uHWkl5njaR0eYZnG264Wv3KIR7Z2OfokheWtuL5Qoy7YTf6xDx+H/AHfh8jLsijuswzODWt2M5woa7IWL9ZLDXS5e/RXJf6Zyh80z1Y6h/q/D5Genr7Tt8wzOVo11oe6yq2vtWVkV5b/QucFpvC3ZKq6Dk+EJfVz/ALZZMfC2ufVkn5mo2QlomWOYZmQGGwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANfkI6S0nVRHOx5yfu1x3zk+xdXa9xyON0ndiXlJ7Fbe6mLey+9/afp2EuJxldC+7V9nzd8yzNRg2dBpDWSqGcaV08+G55Vp/i5+GZz+J0lir3synKMXwrqTivTe/FlhgdB55Ss+ivgXF9/UXmHw1cFlXFR7uL73xZz3PE4jWT6OPYt/P1a8AaSOUw2rtsuMY1p85PJ+S3lnTqxD7djfZGKXrvL7IMzUMJRHes/F8shbSKuOr+GXGMpfim18siRaEwq+5XjOx/mWGZjaHqqn9kfRGMo9ghLQWEf3K8J2L9QvZq3hXwU4/hk388y2zMOR70VP7F6LkYcYPgjmsRqlF/y7muycU/VfsUuN1ZxEd+wrY9cJKX+L3+h3rkati5YWl7ll4PnmInRXLuPPcHpjF4Z5QsnsR3Oqa24d2/3fBo6nRWudNmUMSv4eb3bWe1W384+O7tHsbgqrllbCM+qXuzXdJbzlNK6tSjnOluyPFwe6Uf3+YJ307ntL55+j8hLlfTrF7a+efo/I9GhNSSlFpprNNNNNdaZueR6J0ziMJL6qW1Xnvpsz6N9e/k+1eOZ6HoTTtOLj9W9i1LOdUveXavij2r0LacRC3do+wrw+Lrv3aPs+b/mhcgADyoAAAAAAAAAAAAAAAAAAAACi09p2OHWxDKd8lnGHBQXxS7Opc/UNYtNrCw2Y5SvsT6OL4RXxy7Ozm/E4atSnJyk3KU5OUpS3uUnxbIMbjOiWzHre399nqPqp29Xu9xmO3bNznKU7JtZye9vqS6l2HVaL0fGpKUsnN8+UexfuV+g8Mv5j5fRj+bL6DOXRH/rLVvdz8RlnYieCNsyOMjbModgho2bNXI1bNWz3pBbNnI1cjVs1bNbQlmzkauZo5Grka2hMmSOZhyIXI1czW0KlMmcjSUiJzMbZpSFOwqdNaIjanZWlG3i0tys/wC+05HZlCSnCUoThLOMotqUZHobkc7p/BJSVkVulul39fj+QuyP60RYmOX+SOnbzL3VnWZYjKm/KvEJbn9m5LmuqXWvLs6k8YtqaeazTTTi1uaa3pp8md/qprB/ER6G5pYiCzXJXR61/qXNePddRdt6S3nSwWN6X7J9b3/s6gAAoOiAAAAAAAAAAAAAjpbSEMPTK6fCKyjFcZzfuxXePHmOtulv4nEOuDzow8nBZcJWcJy/Jdz6xN9vRQcuPAbTU7JZeohbiZ32Sute1ObzfVFcorqS4FhhoFfholrTuPmbZNts7Ea8lkjo8FlGEUvhz8941GZWYW3OEexZeQzGZQpfavAjnDVj0ZksZCcJk0JnmYiUSZmrZnM1ZqLJ5Iw2aNmzI5MamTzMNmkmZbImzeZNNhKRHKQSkRSkaJJyNnIxtkbZhyNIncibaFtIx2q5J8smvBm20Q4yz6DXXkvUZwYqyf2S8Dn7qhJ7UJRsrk4zhJSjJcUy4lDNCV9Z7WiCuxpnoegdKxxdKsWSnH6NsPhmvyfFFseV6A0k8JiFNvKqeUL1yUeT/pbz7sz1JPNZrenvXajoQlmj6zCYjp69rit/zv5rgbAAGioAAAAwzJhmQAodbtKfw2FlKLyttfRVdalJb5eCTffkeYYeJea/6Q6TFqiLzhhoJPq6SSUpemwvMpcOcjGz2p5dnx/O47WBo2a03vlry5+ZZ4ZDkZCMJZImjM5ckXuBaYO/L6L4Ph3lhCwoITLHD38n5nsHwZLbXxLaFgzCRW12DNcxuRFOBYwkbMWhMYi8wJJxNZEciWREx0SSaI5EUmSSIZsYkQ2EcmRNm02aM2kRTYNmrZlkbY2MSaTBsTxNm08lwXqyW2fJeYs0MUSG6eeiNciK+BPkEo5obGBOnkU2IqO51J0l0uH6Kbzsw72d/F1P3H81/ScfiYE+rGM6DGQ35Rt+qn1ZPg/7sh8Vkdj6ZfsWpcJacvz7np5hGTBs+mMgAABhml1ihGU5bowi5SfUks2bsoddMV0ej8Q88nKrok1xzm1Dd5njeSz7D2MXJqK46ep5NbiXbbO6XvWznY8+W1JvL1HMOyroZY0yOHYm9WfX1VpLJD8Zm8bBJWEkZiHEY4FjXMarmVtchuqZ6qyayJaU2DtdhVVyHK5jFAhsgWddg5XMq6pjtUj3oyGyI4yKSJYPMJRGQrZBZEVkheY3OIvKI5VnOtQszRjEoEcojY1kE0QyIZjEokcoj1WR2C0okcojMokUkNjWRzRDkZyMtBkNjWTZiuJgVOJi1vW5rcn1NcGXl0dxVYqJvYKKZHqGjMUrqa7l95XGXi1vXmNHOaj3bWD2Xxrtsj4N7S9JHRinofbVz24Rl2pP1RkAADZhnGe1C7ZwMY/+TEQi+5RlL9KOzZwXtZf/AOaldeIf/rkYs6jKMIs76/FHnNMh6E9xV1SHIz3HKlE+zqhoNqZvGYntm8JmNgY4FnXYOVTKquY3VMYoElkC2qmOV2FTXMcrmMUCKyBbVTHqZlPTMfosGKs59sC3qkMZZiFMh+qWY1VHOtiRTiQygOSiQyQ5VHOtiKTiQyiMyRDNDo1HOtQvJEckTyIpDVUQWEEkRyRPIhkNVRFYQyRg3kYGKsle8jsW4rMTEtZ8CsxIOAyp6nQ6gWbr4dUoWeea/SdicPqC/rcQv9up/wCdh3BFNZSaPtME88PB938tGQADBUYZwXtYg3haXyWJyfjXM71nH+06na0e5cejurn4NuH6jM1nFofhXlfX4r3PJahuPAUqHIcCJwPtqXoZyN4GMjaAKsaxqsarFahqsYqyawcqG6xSobqY5VENg7UPUsr62OVSGxqIbUWdMhyE8itrmSu0fGo59sRud5FO4TstF5YgbGo51sR2dpDO0UleRytHKo51sBuVpFKwVdppKwYoENkBiVhFKwglYRSsGKBDZAYlYY6QUdhlWG9gkcNRmdm4rcTMYsnuK7EzMSiMrhqdP7PlnZfL/bpX+U2dycd7O6/qrrPitjBd0Yp/OTOxOTb12fX4RZUQXd76mQABZSYZU60YTpsFiKl70qJ7H40s4+qRbGJRzTT4NZACbTzR861PPx3jtRtpzBPD4u6lrJQslsf8b3xy8JJeBFUxewfbYe1TipLik/XUYyBGUZyNxrK8yepjdbEoMarY2NYiaHa2NVsSrkMwkOjWRzQ9XIZrmIwkMRmPjUSTiPxsB3CbtNJWDlWQWxGZ3CllxFOwWssHQrOdbEa6cw7iudodMN6IgsiPu00laJu01dp6qyGyI1K00lYKu0jlYbVZDZEbUzdWCUZkimeuBM4E1tm4rsRYS3WCkKpW2Qpj71so1r+p5J+G9+BPZkk2xtVTbSXE9R1Kw3R4GvPc7HO1/wBUm16ZHQEWGpUIRrjujCMYpdiWRKcFvN5s+rjFRSS3LT0MgAHh6YZkwzIAeZe1LReU68ZBbpLobWutJuLfqvI4eqR7lp7RscVhrMPP7yP0XzjNb4yXamkzwyyqddkqrFszrm65R6pJ5eRuKzO/9KxGcOje+Ps+T/gdgzfIgqkMIfGB3oyzQRGK5EORvFlEawksxyEhmEhGEhiMh8ayWcR6EyZTEoTNnYPVZLYhp2EcrBd2EcrDagc61E07BecyOdhBZMbGBz7YmbLCLpiGywWlZkURgQWRLDpjDtK/pg6Y10RHOI87TCsEVYSwkGwRTiOxmbuzcKRmaztFyWQlwN7bTovZ7o/pcU8RJZww8c0+XSyW7yWfmjkJzbajFOUpNRjFcZSbySR7PqpolYTCwqf8yX1lr67JcfLh4HIx1mzHZ4y9joYKnOe0+HuXZgyYOQdYyAAAAAAAAea+0jQOTWPqXHKGIS5fDP8AJ+HUelEOIpjZCVc0pQnFxlF700z1PJ5jabZVTU48PyeA1THK5DetOgZ4K/Le6JtumX6G+teq8SsqmX15NZo+rw98bIKUdzHkZRpCRKi2ESvPMzFk0JkKM55FUIGZIa2zDsFdsw7BuwR2oZdhpKwXdhFK00oHPtRPK0gnYRSsIJ2DYwOfYjeyYpZYE7BadhRCBDZE36YzGzMTkySEhzgiKcR6EyaExKMiXpBEkTSiNuwhnaQSsLHV3Q9mOvVNearWUrrOUIf/AE+RBiLIwi5S3IzGpt5I6X2daCd9v8ZavqqJZVJ8J2/F3L59x6uK6PwVdFUaakowrioxS6kNHzF1rsm5M61cFCOygAAFmwAAAAAAAAAAACv0xourFUyoujtRktz+1GXKSfJo8b05oa3BW9HYs4tvo7Uvozj+T7D3Qr9LaLqxVbqvipRfB/ai+TT5MbVa4PuKsLipUS01T3rl3+54jXMbhMa1h1avwU299lDf0bks2l1S6vkVNdh2KJxks0fSUYiNkdqLzRZI1kyCFpv0hfHIe5rIzJkUmbNkchyJps1lIilJm8iOQxEVhHKTIZMlkRSGxIbCFkckSyIpDEyKaIpIxF5GZshlI1tJEc4jCsMuwT2y+1Y1ZxOkJpVp10p5WXSX0UuaXxMhxF8YRcpPJCtjN6EehNF3Yy5UURzb3yk/crh8Uv25nuWrug6sFQqa1nLjZY/esnzkw1f0FRgqlVRFJ8Zze+c5c22W58tisU75dkVuXPv9imutQ8QAAJRgAAAAAAAAAAAAAAAAAAABFdVGcXCcVKMlk4yWaaOA1h1C3u3AtLm6JboP8L5d3A9EA3CcoPOLyGV2zrltQeTPAcTTZVPo7YShNfZmss+1dfgRq09z0loqjEx2L64zT+JJtHEaW9nXGWEtcefR2ZOPcnxXqdOn6hH9ay8PmZ06/qSf+xZPu3c/c4VWmemGtIau47D59JROUV9utdLH03+hTym08nmn1STi/JnSqxEZ9V5lKvjPqvMddhHKaFXYau0oVgqcyeUyOUyCVpo5jFaSTZJOZDOZrtZvJb5dUd78kWej9WcfiWuiw81F/bsXRRXnv9DFmJhBfc0vElmVE5mMPh7LZqumuds5cIwW0/8ApdrPS9DeyxvKWNt3cXVTuXc5cfLI9B0RoLC4SOxhqoVrm0ltN9bfM5l/1aK0rW0+3cufloIazPOdV/Zk243aReS3NYeD4/jl+S9T1PC4WuqCrqhGEIrKMYpJJE4HGuusultTef8AHgCSW4AABR6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAADDSfHeJYrROGt3W01z/FFMeAAOav1H0dPf0EYN8624fIRn7ONHvflau6yf7nZgbVtkd0mvM0pyXE4yPs20euKtffbP9xujULRsPuFP/kbn8zqAPXbY98m/Nnjk3xK/CaFwtX8qmuH4YpD8Ypbkku7cZAWeGQMAAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//9k="
+          alt="color wheel"
+        />
+        <h2>The color system</h2>
+        <p>Create a color theme that reflects...</p>
+        <a href=""
+          >Related link
+          <img
+            src="https://www.shutterstock.com/image-vector/white-rounded-right-arrow-grey-260nw-1090084799.jpg"
+            alt="arrow"
+            class="arrow"
+        /></a>
+      </div>
     </div>
   </body>
 </html>

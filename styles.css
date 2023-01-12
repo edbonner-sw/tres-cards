@@ -1,0 +1,28 @@
+body {
+  max-width: 1200px;
+  font-family: "Nunito Sans", sans-serif;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 0;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+}
+
+.card {
+  width: 250px;
+  height: 155px;
+  margin: 25px;
+  border: 1px solid black;
+}
+
+.card img {
+  width: 65px;
+  height: 65px;
+  border-radius: 35px;
+}

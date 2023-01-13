@@ -1,7 +1,6 @@
 body {
   max-width: 1200px;
   font-family: "Nunito Sans", sans-serif;
-  border: 1px solid black;
   margin: 20px;
   padding: 0;
 }
@@ -9,20 +8,73 @@ body {
 .cards {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
-  border: 1px solid black;
 }
 
 .card {
-  width: 250px;
+  width: 275px;
   height: 155px;
   margin: 25px;
-  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px darkgray;
+  transition: 0.3s;
+  display: grid;
+  grid-template-areas:
+    "icon text"
+    "link arrow";
 }
 
-.card img {
+.card:hover {
+  background-color: whitesmoke;
+}
+
+.card_icon {
   width: 65px;
   height: 65px;
   border-radius: 35px;
+  grid-area: icon;
+  align-self: top;
+  position: relative;
+  top: 20px;
+}
+
+.text {
+  grid-area: text;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.content {
+  opacity: 0.6;
+}
+
+a {
+  grid-area: link;
+  text-decoration: none;
+  font-size: medium;
+  color: black;
+  opacity: 0.6;
+  font-weight: 700;
+  align-self: end;
+}
+
+.card span {
+  margin-left: auto;
+  align-self: end;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  grid-area: arrow;
+}
+
+@media (max-width: 375px) {
+  .cards {
+    flex-direction: column;
+  }
 }
